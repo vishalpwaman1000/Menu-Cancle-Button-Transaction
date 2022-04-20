@@ -1,0 +1,51 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Menu .Line{
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 4px;
+    transition: transform .5s;
+    opacity: .25s;
+}
+
+.Menu.active .Line:nth-child(1){
+    margin: 5px 0;
+    transform: translateY(13px) rotate(45deg);
+}
+
+.Menu.active .Line:nth-child(2){
+    opacity: 0;
+}
+
+.Menu.active .Line:nth-child(3){
+    
+    transform: translateY(-13px) rotate(-45deg);
+}

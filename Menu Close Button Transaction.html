@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu-Close Button Transaction</title>
+    <link rel="stylesheet" href="MenuCloseButtonTransaction.css" />
+  </head>
+  <body>
+    <button type="button" class="Menu">
+      <span class="Line"></span>
+      <span class="Line"></span>
+      <span class="Line"></span>
+    </button>
+
+    <script>
+        console.log('Hello')
+        const Menu = document.querySelector('.Menu')
+        const MenuIsActive = () => {
+          Menu.classList.toggle('active')
+        }
+        Menu.addEventListener('click', MenuIsActive)
+    </script>
+  </body>
+</html>
