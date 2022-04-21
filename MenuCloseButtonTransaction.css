@@ -9,9 +9,10 @@ html,body{
     align-items: center;
 }
 
-.Menu{
+.Menu1,.Menu2,.Menu3{
     height: 100px;
     width: 100px;
+    margin: 20px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -23,7 +24,7 @@ html,body{
     border: 0.5px solid lightblue;
 }
 
-.Menu .Line{
+.Menu1 .Line, .Menu2 .Line, .Menu3 .Line{
     display: block;
     width: 50px;
     height: 5px;
@@ -34,26 +35,54 @@ html,body{
     opacity: .25s;
 }
 
-.Menu.active .Line:nth-child(1){
+/* Multiplication */
+.Menu1.active .Line:nth-child(1){
     margin: 5px 0;
     /* Close Formate */
-    /* transform: translateY(13px) rotate(45deg); */
-    
-    /* Substract Formate */
-    /* transform: translateY(13px); */
+    transform: translateY(13px) rotate(45deg);
+   
+}
+
+.Menu1.active .Line:nth-child(2){
+    opacity: 0;
+}
+
+.Menu1.active .Line:nth-child(3){
+    /* Close Formate */
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* Addition */
+.Menu2.active .Line:nth-child(1){
+    margin: 5px 0;
 
     /* Addition Formate */
     transform: translateY(13px) rotate(90deg);
 }
 
-.Menu.active .Line:nth-child(2){
+.Menu2.active .Line:nth-child(2){
     opacity: 0;
 }
 
-.Menu.active .Line:nth-child(3){
-    /* Close Formate */
-    /* transform: translateY(-13px) rotate(-45deg); */
+.Menu2.active .Line:nth-child(3){
 
+    /* Substract Formate */
+    transform: translateY(-13px);
+}
+
+/* Substraction */
+.Menu3.active .Line:nth-child(1){
+    margin: 5px 0;
+
+    /* Substract Formate */
+    transform: translateY(13px);
+}
+
+.Menu3.active .Line:nth-child(2){
+    opacity: 0;
+}
+
+.Menu3.active .Line:nth-child(3){
     /* Substract Formate */
     transform: translateY(-13px);
 }

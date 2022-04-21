@@ -5,7 +5,19 @@
     <link rel="stylesheet" href="MenuCloseButtonTransaction.css" />
   </head>
   <body>
-    <button type="button" class="Menu">
+    <button type="button" class="Menu1">
+      <span class="Line"></span>
+      <span class="Line"></span>
+      <span class="Line"></span>
+    </button>
+
+    <button type="button" class="Menu2">
+      <span class="Line"></span>
+      <span class="Line"></span>
+      <span class="Line"></span>
+    </button>
+
+    <button type="button" class="Menu3">
       <span class="Line"></span>
       <span class="Line"></span>
       <span class="Line"></span>
@@ -13,11 +25,26 @@
 
     <script>
         console.log('Hello')
-        const Menu = document.querySelector('.Menu')
-        const MenuIsActive = () => {
-          Menu.classList.toggle('active')
+        // Mutiplication
+        const Menu1 = document.querySelector('.Menu1')
+        const MenuIsActive1 = () => {
+          Menu1.classList.toggle('active')
         }
-        Menu.addEventListener('click', MenuIsActive)
+        Menu1.addEventListener('click', MenuIsActive1)
+        
+        // Addition 
+        const Menu2 = document.querySelector('.Menu2')
+        const MenuIsActive2 = () => {
+          Menu2.classList.toggle('active')
+        }
+        Menu2.addEventListener('click', MenuIsActive2)
+
+        //Substraction
+        const Menu3 = document.querySelector('.Menu3')
+        const MenuIsActive3 = () => {
+          Menu3.classList.toggle('active')
+        }
+        Menu3.addEventListener('click', MenuIsActive3)
     </script>
   </body>
 </html>
